@@ -21,7 +21,7 @@
 ###################################################################################
 
 {
-    "name": "Agrista Backend Theme",
+    "name": "Agrista Web Theme",
     "summary": "Odoo Community Backend Theme",
     "version": "14.0.1.0.1",
     "category": "Themes/Backend",
