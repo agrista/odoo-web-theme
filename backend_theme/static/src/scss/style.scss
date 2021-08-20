@@ -348,7 +348,7 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 }
 
 .o_form_view .oe_button_box .oe_stat_button .o_stat_info .o_stat_value {
-    color: $brand-primary;
+    color: $brand-secondary !important;
 }
 
 .o_form_view .o_horizontal_separator {
