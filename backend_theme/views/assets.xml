@@ -8,14 +8,18 @@
 
 <odoo>
     <data>
-		<template id="assets_backend" name="Agrista Backend Theme" inherit_id="web.assets_backend">
-		<xpath expr=".">
+        <template id="assets_backend" name="Agrista Backend Theme" inherit_id="web.assets_backend">
+            <xpath expr=".">
                 <link rel="stylesheet" href="/backend_theme/static/src/scss/colors.scss"/>
                 <link rel="stylesheet" href="/backend_theme/static/src/scss/style.scss"/>
-				<link rel="stylesheet" href="/backend_theme/static/src/scss/sidebar.scss"/>
-				<script type="application/javascript" src="/backend_theme/static/src/js/sidebar.js"/>
-				<script type="application/javascript" src="/backend_theme/static/src/js/sidebar-toggle.js"/>
-			</xpath>
-		</template>
+                <link rel="stylesheet" href="/backend_theme/static/src/scss/sidebar.scss"/>
+                <script type="application/javascript" src="/backend_theme/static/src/js/sidebar.js"/>
+                <script type="application/javascript" src="/backend_theme/static/src/js/sidebar-toggle.js"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght,100..900&amp;display=swap"
+                      rel="stylesheet"/>
+            </xpath>
+        </template>
     </data>
 </odoo>
