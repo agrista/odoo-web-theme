@@ -19,6 +19,7 @@ $gray-light: $slate-8;
 $gray-lighter: $slate-2;
 
 $brand-3: $grass-3;
+$brand-primary-light: $grass-5;
 $brand-primary: $grass-11;
 $brand-primary-dark: $grass-12;
 $brand-secondary: $lime-10;
@@ -88,6 +89,15 @@ html .o_web_client {
     .toggle-sidebar ~ .o_action_manager {
         flex: 0 0 100%;
     }
+}
+
+.o_DiscussSidebarItem_activeIndicator.o-item-active {
+    background-color: $brand-primary-light;
+}
+
+
+.o_search_panel .o_search_panel_category .o_search_panel_section_icon {
+    color: $brand-primary !important;
 }
 
 // Fix color Add file button
@@ -453,6 +463,14 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 
 .o-menu-search-result {
     color: #fff;
+}
+
+.o_form_view .o_form_uri > span:first-child {
+    color: $brand-primary;
+}
+
+.o_form_view .o_form_uri > span:first-child:hover {
+    color: $brand-primary-dark;
 }
 
 // Chat window
