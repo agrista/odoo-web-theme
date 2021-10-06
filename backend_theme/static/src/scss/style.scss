@@ -17,6 +17,7 @@ $gray-dark: $slate-11;
 $gray: $slate-9;
 $gray-light: $slate-8;
 $gray-lighter: $slate-2;
+$gray-11: $slate-11;
 
 $brand-3: $grass-3;
 $brand-primary-light: $grass-5;
@@ -412,7 +413,7 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 // App Dashboard
 
 .o_menu_apps .dropdown-menu.show {
-    background: url(/dashboard);
+    background: url(/backend_theme/static/src/img/background.webp);
     background-origin: border-box;
     background-size: cover;
     height: calc(100vh);
@@ -462,7 +463,7 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 }
 
 .o-menu-search-result {
-    color: #fff;
+    color: $gray-11;
 }
 
 .o_form_view .o_form_uri > span:first-child {
