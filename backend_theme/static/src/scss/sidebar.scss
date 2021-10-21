@@ -7,7 +7,7 @@ $odoo-sidebar-width: 180px;
 
 .app-sidebar-panel {
 	flex: 0 0 $odoo-sidebar-width;
-    background-color: $gray-base;
+    background-color: $gray-900;
     height: calc(100% - 46px) !important;
     //height: 100% !important;
     overflow-y: auto;
@@ -47,13 +47,13 @@ $odoo-sidebar-width: 180px;
             text-decoration: none;
             font-size: 13px;
             font-weight: 300;
-            color: $gray-lighter;
+            color: $gray-50;
             overflow: hidden;
             text-overflow: ellipsis;
         }
     }
         > li:hover > a{
-	    background: darken(#46A758, 15%);
+	    background: $brand-primary-600;
 	    color: #fff;
         }
     }
