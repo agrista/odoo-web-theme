@@ -27,7 +27,7 @@
                 <link rel="preconnect"
                     href="https://fonts.gstatic.com"
                     crossorigin="true" />
-                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap"
                     rel="stylesheet" />
             </xpath>
         </template>
