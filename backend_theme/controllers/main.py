@@ -8,7 +8,8 @@ from werkzeug.utils import redirect
 
 DEFAULT_IMAGE = '/backend_theme/static/src/img/background.webp'
 
-class DasboardBackground(Controller):
+
+class DashboardBackground(Controller):
 
     @route(['/dashboard'], type='http', auth='user', website=False)
     def dashboard(self, **post):
