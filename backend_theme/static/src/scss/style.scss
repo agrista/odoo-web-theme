@@ -3,40 +3,6 @@
 
 $font-size-base: (16 / 16) * 1rem !default;
 
-/*@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url('/backend_theme/static/src/font/Inter-Var-Latin.woff2') format('woff2');
-}*/
-
-$gray-50: $gray-50;
-$gray-100: $gray-100;
-$gray-200: $gray-200;
-$gray-300: $gray-300;
-$gray-400: $gray-400;
-$gray-500: $gray-500;
-$gray-600: $gray-600;
-$gray-700: $gray-700;
-$gray-800: $gray-800;
-$gray-900: $gray-900;
-
-$brand-primary-100: $lime-100;
-$brand-primary-300: $lime-300;
-$brand-primary-400: $lime-400;
-$brand-primary-500: $lime-500;
-$brand-primary-600: $lime-600;
-$brand-primary-700: $lime-700;
-$brand-primary-800: $lime-800;
-$brand-primary-900: $lime-900;
-
-$brand-secondary-600: $green-600;
-$brand-secondary-700: $green-700;
-$brand-secondary-900: $green-900;
-
-$warning-600: $red-600;
-
 body {
     font-family: 'Inter', sans-serif;
     touch-action: manipulation;
@@ -57,18 +23,17 @@ body {
 
 .o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
 
-    background-color: $brand-primary-900;
+    background-color: $brand-secondary-1000;
     color: inherit;
-
 }
 
 .o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
-    background-color: $brand-primary-900;
+    background-color: $brand-primary-1000;
 }
 
 .o_main_navbar .show .dropdown-toggle {
 
-    background-color: $brand-primary-900;
+    background-color: $brand-secondary-900;
 
 }
 
@@ -450,7 +415,7 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 // App Dashboard
 
 .o_menu_apps .dropdown-menu.show {
-    background: url(/backend_theme/static/src/img/background.webp);
+//    background: url(#{$menu-background});
     background-origin: border-box;
     background-size: cover;
     height: calc(100vh);
