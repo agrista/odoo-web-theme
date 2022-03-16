@@ -9,7 +9,7 @@
 <odoo>
     <data>
         <template id="assets_backend"
-            name="Agrista Backend Theme"
+            name="Contagra Backend Theme"
             inherit_id="web.assets_backend">
             <xpath expr=".">
                 <link rel="stylesheet"

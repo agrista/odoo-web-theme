@@ -3,7 +3,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
-    "name": "Agrista Backend Theme",
+    "name": "Contagra Backend Theme",
     "summary": "Inspired by Openworx Material Backend Theme V14",
     "version": "14.0.0.2",
     "category": "Theme/Backend",
@@ -14,7 +14,7 @@
     'images': [
         'images/screen.png'
     ],
-    "author": "Agrista",
+    "author": "Contagra",
     "license": "LGPL-3",
     "installable": True,
     "depends": [
