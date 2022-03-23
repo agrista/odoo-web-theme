@@ -25,8 +25,8 @@
     "data": [
         'views/assets.xml',
         # 'views/res_company_view.xml',
-        'views/users.xml',
-        'views/sidebar.xml',
+        #'views/users.xml',
+        #'views/sidebar.xml',
     ],
     # 'live_test_url': 'https://youtu.be/JX-ntw2ORl8'
 

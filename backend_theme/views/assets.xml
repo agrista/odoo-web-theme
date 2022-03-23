@@ -20,10 +20,10 @@
                     href="/backend_theme/static/src/scss/style.scss" />
                 <link rel="stylesheet"
                     href="/backend_theme/static/src/scss/sidebar.scss" />
-                <script type="application/javascript"
+                <!--<script type="application/javascript"
                     src="/backend_theme/static/src/js/sidebar.js" />
                 <script type="application/javascript"
-                    src="/backend_theme/static/src/js/sidebar-toggle.js" />
+                    src="/backend_theme/static/src/js/sidebar-toggle.js" />-->
                 <link rel="preconnect"
                     href="https://fonts.googleapis.com" />
                 <link rel="preconnect"
