@@ -26,6 +26,9 @@ $brand-secondary-1000: $green-900;
 
 $warning-600: $red-600;
 
-.o_menu_apps .dropdown-menu.show {
-    background: url("/backend_theme/static/src/img/background.webp");
-}
+$brand-navbar: $brand-secondary-900;
+$brand-navbar-hover: $brand-secondary-1000;
+
+$o-brand-odoo: $brand-secondary-900;
+
+$o-navbar-inverse-link-hover-bg: $brand-secondary-900

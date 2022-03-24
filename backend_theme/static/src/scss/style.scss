@@ -17,28 +17,39 @@ body {
 }
 
 .o_main_navbar {
-    background-color: $brand-secondary-900;
-    border-bottom: 1px solid $brand-secondary-900;
+    background-color: $brand-navbar;
+    border-bottom: 1px solid $brand-navbar;
 }
 
 .o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
-
     background-color: $brand-secondary-1000;
     color: inherit;
 }
 
 .o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
-    background-color: $brand-primary-1000;
+    background-color: $brand-navbar;
+}
+
+.o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
+    background-color: $brand-navbar;
+    color: inherit;
 }
 
 .o_main_navbar .show .dropdown-toggle {
-
-    background-color: $brand-secondary-900;
-
+    background-color: $brand-navbar;
 }
 
 .o_MessagingMenu_counter {
     background-color: $warning-600;
+}
+
+#oe_main_menu_navbar {
+    border-bottom: 1px solid $brand-navbar;
+    background-color: $brand-navbar;
+}
+
+.o_menu_apps .dropdown-menu.show {
+    background: url("/backend_theme/static/src/img/background.webp");
 }
 
 //.app-sidebar {
