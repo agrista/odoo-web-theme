@@ -98,6 +98,9 @@
                 href="/web_theme/static/src/scss/appsbar.scss" />
             <link rel="stylesheet"
                 type="text/scss"
+                href="/web_theme/static/src/scss/buttons.scss" />
+            <link rel="stylesheet"
+                type="text/scss"
                 href="/web_theme/static/src/scss/control_panel.scss" />
             <link rel="stylesheet"
                 type="text/scss"

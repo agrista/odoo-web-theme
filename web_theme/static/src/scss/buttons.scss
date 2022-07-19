@@ -1,0 +1,116 @@
+// Buttons
+
+.btn-fill-primary,
+.btn-primary {
+    color: #FFFFFF;
+    background-color: $ag-brand-primary-600;
+    border-color: $ag-brand-primary-600;
+}
+
+.btn-fill-primary:hover,
+.btn-primary:hover {
+    color: #FFFFFF;
+    background-color: $ag-brand-primary-700;
+    border-color: $ag-brand-primary-800;
+}
+
+.btn-fill-primary:focus,
+.btn-primary:focus,
+.btn-fill-primary.focus,
+.focus.btn-primary {
+    box-shadow: 0 0 0 0.2rem rgba(144, 143, 185, 0.5);
+}
+
+.btn-fill-primary.disabled,
+.disabled.btn-primary,
+.btn-fill-primary:disabled,
+.btn-primary:disabled {
+    color: #FFFFFF;
+    background-color: $ag-brand-primary-600;
+    border-color: $ag-brand-primary-600;
+}
+
+.btn-fill-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-fill-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-fill-primary.dropdown-toggle,
+.show>.dropdown-toggle.btn-primary {
+    color: #FFFFFF;
+    background-color: $ag-brand-primary-800;
+    border-color: $ag-brand-primary-900;
+}
+
+.btn-fill-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-fill-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-fill-primary.dropdown-toggle:focus,
+.show>.dropdown-toggle.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem $ag-brand-primary-300;
+}
+
+
+.btn-secondary {
+    border: none;
+}
+
+.btn:active, .btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: $gray-200 !important;
+}
+
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: $gray-200 !important;
+}
+
+
+.btn-link {
+    color: $ag-brand-primary-600;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled {
+    color: $ag-brand-primary-600;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button:not(.disabled):hover {
+    color: $ag-brand-primary-600;
+}
+
+.o_dropdown_toggler_btn, .o_dropdown_toggler_btn:hover, .o_dropdown_toggler_btn:focus, .o_dropdown_toggler_btn:hover, .o_dropdown_toggler_btn:focus, .btn-icon, .o_graph_button {
+    text-transform: none !important;
+    color: $gray-800 !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.dropdown-menu {
+    //    border-radius: 0px;
+}
+
+.oe_highlight {
+    color: #ffffff !important;
+    background-color: $ag-brand-primary-600 !important;
+}
+
+.o_external_button {
+    color: $ag-brand-primary-600 !important;
+    background: #ffffff;
+}
+
+.o_button_icon {
+    color: $ag-brand-primary-600 !important;
+}
+
+.o_FollowButton_unfollow.o-following {
+    color: $ag-brand-primary-600;
+}
+
+// Badges
+
+.badge {
+    border: 1px solid $ag-brand-primary-600;
+}

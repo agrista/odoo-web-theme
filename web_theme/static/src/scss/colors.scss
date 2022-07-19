@@ -20,16 +20,27 @@
 *
 **********************************************************************************/
 
-$o-brand-odoo: #243742;
-$o-brand-primary: #5D8DA8;
+$o-brand-odoo: #0C4A6E; // tw-sky-900
+$o-brand-primary: #0EA5E9; // tw-sky-500
 
-$mk-required-color: #d1dfe6;
+$ag-brand-primary-50: #F0F9FF;
+$ag-brand-primary-100: #E0F2FE;
+$ag-brand-primary-200: #BAE6FD;
+$ag-brand-primary-300: #7DD3FC;
+$ag-brand-primary-400: #38BDF8;
+$ag-brand-primary-500: #0EA5E9;
+$ag-brand-primary-600: #0284C7;
+$ag-brand-primary-700: #0369A1;
+$ag-brand-primary-800: #075985;
+$ag-brand-primary-900: #0C4A6E;
 
-$mk-apps-color: #f8f9fa;
 
-$mk-appbar-color: #dee2e6;
-$mk-appbar-background: #000000;
+$ag-required-color: #E2E8F0; // tw-slate-200
 
-$mk-brand-gradient-start: lighten($o-brand-odoo, 10%);
-$mk-brand-gradient-end: lighten($o-brand-odoo, 20%);
+$ag-apps-color: #F8FAFC; // tw-slate-50
 
+$ag-appbar-color: #E2E8F0; // tw-slate-200
+$ag-appbar-background: #0F172A; // tw-slate-900
+
+$ag-brand-gradient-start: lighten($o-brand-odoo, 10%);
+$ag-brand-gradient-end: lighten($o-brand-odoo, 20%);

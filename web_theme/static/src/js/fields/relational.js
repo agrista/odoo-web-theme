@@ -42,7 +42,7 @@ odoo.define('web_theme.relational_fields', function (require) {
             const result = this._super(...arguments);
             if (config.device.isMobile && this.$buttons) {
                 const $buttons = this.$buttons.find('.btn-secondary');
-                $buttons.addClass('btn-primary mk_mobile_add');
+                $buttons.addClass('btn-primary ag_mobile_add');
                 $buttons.removeClass('btn-secondary');
             }
             return result;
@@ -54,7 +54,7 @@ odoo.define('web_theme.relational_fields', function (require) {
             const result = this._super(...arguments);
             if (config.device.isMobile && this.$buttons) {
                 const $buttons = this.$buttons.find('.btn-secondary');
-                $buttons.addClass('btn-primary mk_mobile_add');
+                $buttons.addClass('btn-primary ag_mobile_add');
                 $buttons.removeClass('btn-secondary');
             }
             return result;

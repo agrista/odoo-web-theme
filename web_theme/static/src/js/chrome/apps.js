@@ -31,8 +31,8 @@ odoo.define('web_theme.AppsMenu', function (require) {
 
     AppsMenu.include(_.extend({}, MenuSearchMixin, {
         events: _.extend({}, AppsMenu.prototype.events, {
-            "keydown .mk_search_input input": "_onSearchResultsNavigate",
-            "click .mk_menu_search_result": "_onSearchResultChosen",
+            "keydown .ag_search_input input": "_onSearchResultsNavigate",
+            "click .ag_menu_search_result": "_onSearchResultChosen",
             "shown.bs.dropdown": "_onMenuShown",
             "hidden.bs.dropdown": "_onMenuHidden",
             "hide.bs.dropdown": "_onMenuHide",
@@ -49,9 +49,9 @@ odoo.define('web_theme.AppsMenu', function (require) {
         },
         start() {
             this._setBackgroundImage();
-            this.$search_container = this.$(".mk_search_container");
-            this.$search_input = this.$(".mk_search_input input");
-            this.$search_results = this.$(".mk_search_results");
+            this.$search_container = this.$(".ag_search_container");
+            this.$search_input = this.$(".ag_search_input input");
+            this.$search_results = this.$(".ag_search_results");
             return this._super(...arguments);
         },
         _onSearchResultChosen(event) {
