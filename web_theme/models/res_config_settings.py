@@ -70,13 +70,13 @@ class ResConfigSettings(models.TransientModel):
         string="Theme AppBar Background"
     )
 
-    #----------------------------------------------------------
+    # ----------------------------------------------------------
     # Functions
-    #----------------------------------------------------------
+    # ----------------------------------------------------------
 
     def set_values(self):
         res = super(ResConfigSettings, self).set_values()
-        paramag - self.env['ir.config_parameter'].sudo()
+        param = self.env['ir.config_parameter'].sudo()
         variables = [
             'o-brand-odoo',
             'o-brand-primary',
