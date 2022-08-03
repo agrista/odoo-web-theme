@@ -41,16 +41,20 @@ class ResConfigSettings(models.TransientModel):
     theme_favicon = fields.Binary(related="company_id.favicon", readonly=False)
 
     theme_background_image = fields.Binary(
-        related="company_id.background_image", readonly=False)
+        related="company_id.background_image", readonly=False
+    )
 
     theme_background_blend_mode = fields.Selection(
-        related="company_id.background_blend_mode", readonly=False)
+        related="company_id.background_blend_mode", readonly=False
+    )
 
     theme_default_sidebar_preference = fields.Selection(
-        related="company_id.default_sidebar_preference", readonly=False)
+        related="company_id.default_sidebar_preference", readonly=False
+    )
 
     theme_default_chatter_preference = fields.Selection(
-        related="company_id.default_chatter_preference", readonly=False)
+        related="company_id.default_chatter_preference", readonly=False
+    )
 
     theme_color_brand = fields.Char(string="Theme Brand Color")
 
@@ -63,11 +67,12 @@ class ResConfigSettings(models.TransientModel):
     theme_color_appbar_color = fields.Char(string="Theme AppBar Color")
 
     theme_color_appbar_background = fields.Char(
-        string="Theme AppBar Background")
+        string="Theme AppBar Background"
+    )
 
-    #----------------------------------------------------------
+    # ----------------------------------------------------------
     # Functions
-    #----------------------------------------------------------
+    # ----------------------------------------------------------
 
     def set_values(self):
         res = super(ResConfigSettings, self).set_values()
@@ -75,24 +80,28 @@ class ResConfigSettings(models.TransientModel):
         variables = [
             'o-brand-odoo',
             'o-brand-primary',
-            'mk-required-color',
-            'mk-apps-color',
-            'mk-appbar-color',
-            'mk-appbar-background',
+            'ag-required-color',
+            'ag-apps-color',
+            'ag-appbar-color',
+            'ag-appbar-background',
         ]
         colors = self.env['web_theme.scss_editor'].get_values(
-            SCSS_URL, XML_ID, variables)
+            SCSS_URL, XML_ID, variables
+        )
         colors_changed = []
         colors_changed.append(self.theme_color_brand != colors['o-brand-odoo'])
         colors_changed.append(
-            self.theme_color_primary != colors['o-brand-primary'])
+            self.theme_color_primary != colors['o-brand-primary']
+        )
         colors_changed.append(
-            self.theme_color_required != colors['mk-required-color'])
-        colors_changed.append(self.theme_color_menu != colors['mk-apps-color'])
+            self.theme_color_required != colors['ag-required-color']
+        )
+        colors_changed.append(self.theme_color_menu != colors['ag-apps-color'])
         colors_changed.append(
-            self.theme_color_appbar_color != colors['mk-appbar-color'])
+            self.theme_color_appbar_color != colors['ag-appbar-color']
+        )
         colors_changed.append(
-            self.theme_color_appbar_background != colors['mk-appbar-background']
+            self.theme_color_appbar_background != colors['ag-appbar-background']
         )
         if (any(colors_changed)):
             variables = [
@@ -105,26 +114,28 @@ class ResConfigSettings(models.TransientModel):
                     'value': self.theme_color_primary or "#5D8DA8"
                 },
                 {
-                    'name': 'mk-required-color',
+                    'name': 'ag-required-color',
                     'value': self.theme_color_required or "#d1dfe6"
                 },
                 {
-                    'name': 'mk-apps-color',
+                    'name': 'ag-apps-color',
                     'value': self.theme_color_menu or "#f8f9fa"
                 },
                 {
-                    'name': 'mk-appbar-color',
+                    'name': 'ag-appbar-color',
                     'value': self.theme_color_appbar_color or "#dee2e6"
                 },
                 {
-                    'name': 'mk-appbar-background',
+                    'name': 'ag-appbar-background',
                     'value': self.theme_color_appbar_background or "#000000"
                 },
             ]
             self.env['web_theme.scss_editor'].replace_values(
-                SCSS_URL, XML_ID, variables)
-        param.set_param('web_theme.background_blend_mode',
-                        self.theme_background_blend_mode)
+                SCSS_URL, XML_ID, variables
+            )
+        param.set_param(
+            'web_theme.background_blend_mode', self.theme_background_blend_mode
+        )
         return res
 
     @api.model
@@ -134,27 +145,32 @@ class ResConfigSettings(models.TransientModel):
         variables = [
             'o-brand-odoo',
             'o-brand-primary',
-            'mk-required-color',
-            'mk-apps-color',
-            'mk-appbar-color',
-            'mk-appbar-background',
+            'ag-required-color',
+            'ag-apps-color',
+            'ag-appbar-color',
+            'ag-appbar-background',
         ]
         colors = self.env['web_theme.scss_editor'].get_values(
-            SCSS_URL, XML_ID, variables)
-        res.update({
-            'theme_color_brand':
-                colors['o-brand-odoo'],
-            'theme_color_primary':
-                colors['o-brand-primary'],
-            'theme_color_required':
-                colors['mk-required-color'],
-            'theme_color_menu':
-                colors['mk-apps-color'],
-            'theme_color_appbar_color':
-                colors['mk-appbar-color'],
-            'theme_color_appbar_background':
-                colors['mk-appbar-background'],
-            'theme_background_blend_mode':
-                params.get_param('web_theme.background_blend_mode', 'normal'),
-        })
+            SCSS_URL, XML_ID, variables
+        )
+        res.update(
+            {
+                'theme_color_brand':
+                    colors['o-brand-odoo'],
+                'theme_color_primary':
+                    colors['o-brand-primary'],
+                'theme_color_required':
+                    colors['ag-required-color'],
+                'theme_color_menu':
+                    colors['ag-apps-color'],
+                'theme_color_appbar_color':
+                    colors['ag-appbar-color'],
+                'theme_color_appbar_background':
+                    colors['ag-appbar-background'],
+                'theme_background_blend_mode':
+                    params.get_param(
+                        'web_theme.background_blend_mode', 'normal'
+                    ),
+            }
+        )
         return res

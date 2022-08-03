@@ -21,13 +21,13 @@
 **********************************************************************************/
 
 .o_menu_apps {
-	.full {    
+	.full {
 		width: 46px;
 		font-size: 18px;
 		text-align: center;
 	}
     .dropdown-menu.show {
-		@include mk-full-screen-sections();
+		@include ag-full-screen-sections();
 		align-content: flex-start;
 		overflow: inital;
 		display: flex;
@@ -71,14 +71,14 @@
 		    flex-basis: 0;
 		}
 		.o-app-name {
-			color: $mk-apps-color; 
+			color: $ag-apps-color;
 		}
 		.form-row {
 		    width: 100%;
 		}
-		.mk_search_container {
+		.ag_search_container {
 			margin-top: 25px;
-			.mk_search_input {
+			.ag_search_input {
 				input:focus {
 			    	box-shadow: none;
 					border: 1px solid $gray-400;
@@ -86,12 +86,12 @@
 			}
 			&.has-results {
 		        height: 100%;
-		        .mk_search_input {
+		        .ag_search_input {
 		            height: 3em;
 		        }
-		        .mk_search_results {
+		        .ag_search_results {
 		            height: calc(100% - 3em);
-		            .mk_menu_search_result {
+		            .ag_menu_search_result {
 					    display: block;
 					    cursor: pointer;
 					    align-items: center;
@@ -103,10 +103,10 @@
 	            	    white-space: nowrap;
 					    overflow: hidden;
 					    text-overflow: ellipsis;
-		            	color: $mk-apps-color;
+		            	color: $ag-apps-color;
 		            	&:hover, &:active, &.active {
 		            		background-color: rgba(255, 255, 255, 0.05);
-		            	} 
+		            	}
 					}
 		        }
 		    }

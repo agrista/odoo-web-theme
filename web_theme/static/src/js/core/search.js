@@ -85,7 +85,7 @@ odoo.define('web_theme.MenuSearchMixin', function (require) {
                 this._searchMenusSchedule();
                 return;
             }
-            const all = this.$search_results.find(".mk_menu_search_result");
+            const all = this.$search_results.find(".ag_menu_search_result");
             const key = event.key || String.fromCharCode(event.which);
             const pre_focused = all.filter(".active") || $(all[0]);
             const offset = all.index(pre_focused);

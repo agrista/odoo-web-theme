@@ -29,32 +29,30 @@
     "author": "MuK IT, Agrista GmbH",
     "website": "http://agrista.com",
     'live_test_url': 'https://mukit.at/r/SgN',
-    "contributors": [
-        "Mathias Markl <mathias.markl@mukit.at>",
-        "Helmut Drewes <helmut.drewes@agrista.com>"
-    ],
-    "depends": [
-        "base_setup",
-        "web_editor",
-    ],
-    "excludes": [
-        "web_enterprise",
-    ],
-    "data": [
-        "template/assets.xml",
-        "template/web.xml",
-        "views/res_users.xml",
-        "views/res_config_settings_view.xml",
-        "data/res_company.xml",
-    ],
+    "contributors":
+        [
+            "Mathias Markl <mathias.markl@mukit.at>",
+            "Helmut Drewes <helmut.drewes@agrista.com>"
+        ],
+    "depends": ["base_setup", "web_editor"],
+    "excludes": ["web_enterprise",],
+    "data":
+        [
+            "template/assets.xml",
+            "template/web.xml",
+            "views/res_users.xml",
+            "views/res_config_settings_view.xml",
+            "data/res_company.xml",
+        ],
     "qweb": [
         "static/src/components/control_panel.xml",
         "static/src/xml/*.xml",
     ],
-    "images": [
-        'static/description/banner.png',
-        'static/description/theme_screenshot.png'
-    ],
+    "images":
+        [
+            'static/description/banner.png',
+            'static/description/theme_screenshot.png'
+        ],
     "external_dependencies": {
         "python": [],
         "bin": [],
