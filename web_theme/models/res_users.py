@@ -44,13 +44,11 @@ class ResUsers(models.Model):
     # ----------------------------------------------------------
 
     sidebar_type = fields.Selection(
-        selection=[
-            ('invisible', 'Invisible'), ('small', 'Small'), ('large', 'Large')
-        ],
+        selection=[('invisible', 'Invisible'), ('small', 'Small'),
+                   ('large', 'Large')],
         required=True,
         string="Sidebar Type",
-        default=lambda self: self._default_sidebar_type()
-    )
+        default=lambda self: self._default_sidebar_type())
 
     chatter_position = fields.Selection(
         selection=[
@@ -59,12 +57,11 @@ class ResUsers(models.Model):
         ],
         required=True,
         string="Chatter Position",
-        default=lambda self: self._default_chatter_position()
-    )
+        default=lambda self: self._default_chatter_position())
 
-    #----------------------------------------------------------
+    # ----------------------------------------------------------
     # Setup
-    #----------------------------------------------------------
+    # ----------------------------------------------------------
 
     def __init__(self, pool, cr):
         init_res = super(ResUsers, self).__init__(pool, cr)
