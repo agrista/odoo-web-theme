@@ -138,8 +138,8 @@
                 src="/web_theme/static/src/js/chrome/menu.js" />
             <script type="text/javascript"
                 src="/web_theme/static/src/js/chrome/apps.js" />
-            <script type="text/javascript"
-                src="/web_theme/static/src/js/chrome/appsbar.js" />
+    <!--        <script type="text/javascript"
+                src="/web_theme/static/src/js/chrome/appsbar.js" />-->
             <script type="text/javascript"
                 src="/web_theme/static/src/js/fields/relational.js" />
             <script type="text/javascript"

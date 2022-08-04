@@ -25,7 +25,7 @@
         background: $o-webclient-background-color;
         border-bottom: 1px solid gray('300');
         > .o_form_sheet {
-        	@include ag-container-widths();
+        	@include co-container-widths();
          	background-color: $o-view-background-color;
             border: 1px solid gray('400');
             box-shadow: 0 5px 20px -15px black;
@@ -130,22 +130,22 @@
 	}
 }
 
-.ag_chatter_position_sided {
+.co_chatter_position_sided {
 	@include media-breakpoint-up(xxl, $o-extra-grid-breakpoints) {
         .o_form_view:not(.o_form_nosheet) {
             display: flex;
             flex-flow: row nowrap;
             height: 100%;
             .o_form_sheet_bg {
-			    min-width: $ag-form-min-width;
+			    min-width: $co-form-min-width;
                 flex: 1 1 auto;
                 overflow: auto;
             }
             > .o_FormRenderer_chatterContainer {
 				flex: 1 1 auto;
 				overflow: auto;
-				min-width: $ag-chatter-min-width;
-				max-width: $ag-chatter-max-width;
+				min-width: $co-chatter-min-width;
+				max-width: $co-chatter-max-width;
 				border-left: 1px solid gray('400');
             }
         }

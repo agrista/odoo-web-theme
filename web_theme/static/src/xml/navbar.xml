@@ -28,7 +28,7 @@
 	<t t-extend="Menu">
 		<t t-jquery=".o_menu_systray"
 			t-operation="after">
-			<button class="ag_menu_sections_toggle d-md-none"
+			<button class="co_menu_sections_toggle d-md-none"
 				data-toggle="collapse"
 				data-target=".o_main_navbar > .o_menu_sections">
 				<i class="fa fa-bars" />
@@ -36,7 +36,7 @@
 		</t>
 		<t t-jquery=".o_menu_systray"
 			t-operation="after">
-			<div class="ag_apps_sidebar_panel" />
+			<div class="co_apps_sidebar_panel" />
 		</t>
 	</t>
 
@@ -61,7 +61,7 @@
 			</li>
 		</t>
 		<t t-else="">
-			<li class="ag_menu_mobile_section clearfix">
+			<li class="co_menu_mobile_section clearfix">
 				<a role="button"
 					href="#"
 					t-attf-class="dropdown-toggle o-no-caret o_menu_header_lvl_#{depth}"

@@ -26,8 +26,8 @@
 	xml:space="preserve">
 
 	<t t-name="web_theme.AppsBarMenu">
-		<div class="ag_apps_sidebar">
-			<ul class="ag_apps_sidebar_menu">
+		<div class="co_apps_sidebar">
+			<ul class="co_apps_sidebar_menu">
 				<t t-foreach="widget.getApps()"
 					t-as="app">
 					<li class="nav-item">
@@ -37,9 +37,9 @@
 							t-att-data-action-id="app.actionID"
 							class="nav-link"
 							role="menuitem">
-							<img class="ag_apps_sidebar_icon"
+							<img class="co_apps_sidebar_icon"
 								t-attf-src="data:image/png;base64,#{app.web_icon_data}" />
-							<span class="ag_apps_sidebar_name">
+							<span class="co_apps_sidebar_name">
 								<t t-esc="app.name" />
 							</span>
 						</a>

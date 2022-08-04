@@ -29,7 +29,7 @@
     <t t-jquery="button"
       t-operation="inner">
       <span t-att-class="widget.dropdownIcon" />
-      <span class="ag_dropdown_text">
+      <span class="co_dropdown_text">
         <t t-esc="widget.dropdownTitle" />
       </span>
       <span t-if="widget.dropdownSymbol"

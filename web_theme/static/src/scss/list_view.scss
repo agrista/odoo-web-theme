@@ -38,6 +38,11 @@
 	    cursor: default;
 	    font-weight: normal;
 	}
+    .o_list_table {
+        tfoot {
+            background: $co-appbar-color;
+        }
+    }
 }
 
 .o_list_table_grouped.table tbody tr {

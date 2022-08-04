@@ -47,7 +47,7 @@
 
 @include media-breakpoint-between(sm, lg, $o-extra-grid-breakpoints) {
 	.o_search_options {
-		.ag_dropdown_text {
+		.co_dropdown_text {
 			display: none;
 		}
 	}

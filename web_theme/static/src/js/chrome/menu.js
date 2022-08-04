@@ -31,7 +31,7 @@ odoo.define('web_theme.Menu', function (require) {
     Menu.include({
         events: _.extend({}, Menu.prototype.events, {
             "click .o_menu_apps a[data-toggle=dropdown]": "_onAppsMenuClick",
-            "click .ag_menu_mobile_section": "_onMobileSectionClick",
+            "click .co_menu_mobile_section": "_onMobileSectionClick",
             "click .o_menu_sections [role=menuitem]": "_hideMobileSubmenus",
             "show.bs.dropdown .o_menu_systray, .o_menu_apps": "_hideMobileSubmenus",
         }),
@@ -39,8 +39,8 @@ odoo.define('web_theme.Menu', function (require) {
             'web_theme.MobileMenu.sections' : Menu.prototype.menusTemplate,
         start() {
             const res = this._super(...arguments);
-            this.$menu_toggle = this.$(".ag_menu_sections_toggle");
-            this.$menu_apps_sidebar = this.$('.ag_apps_sidebar_panel');
+            this.$menu_toggle = this.$(".co_menu_sections_toggle");
+            this.$menu_apps_sidebar = this.$('.co_apps_sidebar_panel');
             this._appsBar = new AppsBar(this, this.menu_data);
             const appsBarProm = this._appsBar.appendTo(this.$menu_apps_sidebar);
             appsBarProm.then(() => {

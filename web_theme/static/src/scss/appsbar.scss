@@ -20,21 +20,21 @@
 *
 **********************************************************************************/
 
-.ag_apps_sidebar_panel {
+.co_apps_sidebar_panel {
     height: calc(100% - #{$o-navbar-height});
 	position: fixed;
     overflow-y: auto;
     top: $o-navbar-height;
-    background-color: $ag-appbar-background;
+    background-color: $co-appbar-background;
     &::-webkit-scrollbar {
 	  display: none;
 	}
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-    .ag_apps_sidebar {
+    .co_apps_sidebar {
 	    padding: 0;
 	    white-space: nowrap;
-	    .ag_apps_sidebar_menu {
+	    .co_apps_sidebar_menu {
 		    list-style: none;
 		    margin: 0;
 		    padding: 0;
@@ -54,9 +54,9 @@
 		            padding: 8px 11px;
 		            position: relative;
 		            text-decoration: none;
-		            color: $ag-appbar-color;
+		            color: $co-appbar-color;
 		            text-overflow: ellipsis;
-		            .ag_apps_sidebar_icon {
+		            .co_apps_sidebar_icon {
 					    width: 22px;
 					    height: 22px;
 					    margin-right: 5px;
@@ -71,31 +71,31 @@
 }
 
 @include media-breakpoint-up(lg) {
-	.ag_sidebar_type_large {
-		.ag_apps_sidebar_panel {
-			width: $ag-sidebar-large-width;
+	.co_sidebar_type_large {
+		.co_apps_sidebar_panel {
+			width: $co-sidebar-large-width;
 		}
 		.o_action_manager {
-			padding-left: $ag-sidebar-large-width;
+			padding-left: $co-sidebar-large-width;
 		}
 	}
-	.ag_sidebar_type_small {
-		.ag_apps_sidebar_panel {
-			width: $ag-sidebar-small-width;
-			.ag_apps_sidebar_name {
+	.co_sidebar_type_small {
+		.co_apps_sidebar_panel {
+			width: $co-sidebar-small-width;
+			.co_apps_sidebar_name {
 				display: none;
 			}
-			.ag_apps_sidebar_icon {
+			.co_apps_sidebar_icon {
 				margin-right: 0 !important;
 			}
 		}
 		.o_action_manager {
-			padding-left: $ag-sidebar-small-width;
+			padding-left: $co-sidebar-small-width;
 		}
 	}
 
-	.ag_sidebar_type_invisible {
-		.ag_apps_sidebar_panel {
+	.co_sidebar_type_invisible {
+		.co_apps_sidebar_panel {
 			display: none;
 		}
 	}
@@ -115,23 +115,23 @@
 }
 
 @include media-breakpoint-only(md) {
-	.ag_sidebar_type_large, .ag_sidebar_type_small {
-		.ag_apps_sidebar_panel {
-			width: $ag-sidebar-small-width;
-			.ag_apps_sidebar_name {
+	.co_sidebar_type_large, .co_sidebar_type_small {
+		.co_apps_sidebar_panel {
+			width: $co-sidebar-small-width;
+			.co_apps_sidebar_name {
 				display: none;
 			}
-			.ag_apps_sidebar_icon {
+			.co_apps_sidebar_icon {
 				margin-right: 0 !important;
 			}
 		}
 		.o_action_manager {
-			padding-left: $ag-sidebar-small-width;
+			padding-left: $co-sidebar-small-width;
 		}
 	}
 
-	.ag_sidebar_type_invisible {
-		.ag_apps_sidebar_panel {
+	.co_sidebar_type_invisible {
+		.co_apps_sidebar_panel {
 			display: none;
 		}
 	}
@@ -149,7 +149,7 @@
 }
 
 @include media-breakpoint-down(sm) {
-	.ag_apps_sidebar_panel {
+	.co_apps_sidebar_panel {
 		display: none;
 	}
 	.o_action_manager {
@@ -170,7 +170,7 @@
 }
 
 .o_fullscreen {
-	.ag_apps_sidebar_panel {
+	.co_apps_sidebar_panel {
 		display: none;
 	}
 	.o_action_manager {

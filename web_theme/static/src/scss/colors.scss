@@ -21,26 +21,26 @@
 **********************************************************************************/
 
 $o-brand-odoo: #0C4A6E; // tw-sky-900
-$o-brand-primary: #0EA5E9; // tw-sky-500
+$o-brand-primary: #65A30D; // tw-lime-600
 
-$ag-brand-primary-50: #F0F9FF;
-$ag-brand-primary-100: #E0F2FE;
-$ag-brand-primary-200: #BAE6FD;
-$ag-brand-primary-300: #7DD3FC;
-$ag-brand-primary-400: #38BDF8;
-$ag-brand-primary-500: #0EA5E9;
-$ag-brand-primary-600: #0284C7;
-$ag-brand-primary-700: #0369A1;
-$ag-brand-primary-800: #075985;
-$ag-brand-primary-900: #0C4A6E;
+$co-brand-primary-50: #F7FEE7;
+$co-brand-primary-100: #ECFCCB;
+$co-brand-primary-200: #D9F99D;
+$co-brand-primary-300: #BEF264;
+$co-brand-primary-400: #A3E635;
+$co-brand-primary-500: #84CC16;
+$co-brand-primary-600: #65A30D;
+$co-brand-primary-700: #4D7C0F;
+$co-brand-primary-800: #3F6212;
+$co-brand-primary-900: #365314;
 
 
-$ag-required-color: #E2E8F0; // tw-slate-200
+$co-required-color: #D6D3D1; // tw-stone-300
 
-$ag-apps-color: #F8FAFC; // tw-slate-50
+$co-apps-color: #FAFAF9; // tw-stone-100
 
-$ag-appbar-color: #E2E8F0; // tw-slate-200
-$ag-appbar-background: #0F172A; // tw-slate-900
+$co-appbar-color: #E7E5E4; // tw-stone-200
+$co-appbar-background: #1C1917; // tw-stone-900
 
-$ag-brand-gradient-start: lighten($o-brand-odoo, 10%);
-$ag-brand-gradient-end: lighten($o-brand-odoo, 20%);
+$co-brand-gradient-start: lighten($o-brand-odoo, 10%);
+$co-brand-gradient-end: lighten($o-brand-odoo, 20%);
